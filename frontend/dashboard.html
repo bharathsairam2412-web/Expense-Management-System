@@ -1,1 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | Ledgerly</title><link rel="stylesheet" href="css/style.css"></head><body><div class="app-shell"><aside class="sidebar"><a class="brand" href="dashboard.html"><b class="brand-mark">L</b><span>ledgerly</span></a><div class="eyebrow">Workspace</div><nav class="nav"><a class="active" href="dashboard.html"><span class="nav-icon">◒</span><span>Overview</span></a><a href="expenses.html"><span class="nav-icon">≡</span><span>Expenses</span></a><a href="budget.html"><span class="nav-icon">◫</span><span>Budget</span></a></nav><div class="sidebar-foot"><div class="user-chip"><span class="avatar user-initial">A</span><span class="user-name"><b class="user-display">Alex Morgan</b><br><small>Personal workspace</small></span></div></div></aside><main class="main"><header class="topbar"><div><div class="eyebrow" id="dateLabel">Tuesday, September 18</div><h1>Good morning, Alex.</h1><p>Here’s the shape of your spending this month.</p></div><div class="actions"><a class="btn btn-ghost" href="expenses.html">View expenses</a><a class="btn btn-primary" href="add-expense.html">＋ Add expense</a></div></header><section class="grid stats-grid"><article class="stat"><div class="stat-label">Spent this month</div><div class="stat-value" id="totalSpent">$0.00</div><div class="stat-note good">● On track with your budget</div></article><article class="stat"><div class="stat-label">Remaining budget</div><div class="stat-value" id="remainingBudget">$0.00</div><div class="stat-note">of <span id="budgetTotal">$0.00</span> monthly budget</div></article><article class="stat"><div class="stat-label">Transactions</div><div class="stat-value" id="transactionCount">0</div><div class="stat-note">recorded this month</div></article></section><section class="grid content-grid"><article class="panel"><div class="panel-head"><h2>Recent expenses</h2><a class="link" href="expenses.html">See all →</a></div><div class="expense-list" id="recentExpenses"></div></article><article class="panel"><div class="panel-head"><h2>By category</h2><span class="eyebrow">This month</span></div><div class="bar-list" id="categoryBars"></div></article></section></main></div><script src="js/main.js"></script><script src="js/dashboard.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Ledgerly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="dashboard.html"><b
+                    class="brand-mark">L</b><span>ledgerly</span></a>
+            <div class="eyebrow">Workspace</div>
+            <nav class="nav"><a class="active" href="dashboard.html"><span
+                        class="nav-icon">◒</span><span>Overview</span></a><a href="expenses.html"><span
+                        class="nav-icon">≡</span><span>Expenses</span></a><a href="budget.html"><span
+                        class="nav-icon">◫</span><span>Budget</span></a></nav>
+            <div class="sidebar-foot">
+                <div class="user-chip"><span class="avatar user-initial">A</span><span class="user-name"><b
+                            class="user-display">Alex Morgan</b><br><small>Personal workspace</small></span></div>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <div class="eyebrow" id="dateLabel">Tuesday, September 18</div>
+                    <h1>Good morning, Alex.</h1>
+                    <p>Here’s the shape of your spending this month.</p>
+                </div>
+                <div class="actions"><a class="btn btn-ghost" href="expenses.html">View expenses</a><a
+                        class="btn btn-primary" href="add-expense.html">＋ Add expense</a></div>
+            </header>
+            <section class="grid stats-grid">
+                <article class="stat">
+                    <div class="stat-label">Spent this month</div>
+                    <div class="stat-value" id="totalSpent">$0.00</div>
+                    <div class="stat-note good">● On track with your budget</div>
+                </article>
+                <article class="stat">
+                    <div class="stat-label">Remaining budget</div>
+                    <div class="stat-value" id="remainingBudget">$0.00</div>
+                    <div class="stat-note">of <span id="budgetTotal">$0.00</span> monthly budget</div>
+                </article>
+                <article class="stat">
+                    <div class="stat-label">Transactions</div>
+                    <div class="stat-value" id="transactionCount">0</div>
+                    <div class="stat-note">recorded this month</div>
+                </article>
+            </section>
+            <section class="grid content-grid">
+                <article class="panel">
+                    <div class="panel-head">
+                        <h2>Recent expenses</h2><a class="link" href="expenses.html">See all →</a>
+                    </div>
+                    <div class="expense-list" id="recentExpenses"></div>
+                </article>
+                <article class="panel">
+                    <div class="panel-head">
+                        <h2>By category</h2><span class="eyebrow">This month</span>
+                    </div>
+                    <div class="bar-list" id="categoryBars"></div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
